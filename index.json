@@ -19,10 +19,10 @@
     "title": "Namespace Bank.Domain | Bank.Domain",
     "summary": "Namespace Bank.Domain Classes BankAccount"
   },
-  "disenio.html": {
-    "href": "disenio.html",
-    "title": "| Bank.Domain",
-    "summary": "classDiagram class BankAccount BankAccount : +String CustomerName BankAccount : +Double Balance BankAccount : +Debit() Void BankAccount : +Credit() Void"
+  "Cobertura/SummaryGithub.html": {
+    "href": "Cobertura/SummaryGithub.html",
+    "title": "Summary | Bank.Domain",
+    "summary": "Summary Summary Generated on: 05/25/2025 - 17:30:25 Coverage date: 05/25/2025 - 17:30:24 Parser: Cobertura Assemblies: 1 Classes: 1 Files: 1 Line coverage: 70% (14 of 20) Covered lines: 14 Uncovered lines: 6 Coverable lines: 20 Total lines: 33 Branch coverage: 50% (3 of 6) Covered branches: 3 Total branches: 6 Method coverage: Feature is only available for sponsors Coverage Bank.Domain - 70% Name Line Branch Bank.Domain 70% 50% Bank.Domain.BankAccount 70% 50%"
   },
   "docs/getting-started.html": {
     "href": "docs/getting-started.html",
