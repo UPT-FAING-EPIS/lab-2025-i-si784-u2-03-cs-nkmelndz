@@ -68,10 +68,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "Cobertura/SummaryGithub.md",
+      "source_relative_path": "disenio.md",
       "output": {
         ".html": {
-          "relative_path": "Cobertura/SummaryGithub.html"
+          "relative_path": "disenio.html"
         }
       },
       "version": ""
