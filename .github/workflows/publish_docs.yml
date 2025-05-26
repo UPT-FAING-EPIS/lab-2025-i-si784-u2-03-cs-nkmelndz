@@ -32,7 +32,6 @@ jobs:
           dotnet build Bank.Domain/Bank.Domain.csproj
           dll2mmd -f Bank.Domain/bin/Debug/net8.0/Bank.Domain.dll -o disenio.md
 
-
       - name: Restore dependencies (opcional)
         run: dotnet restore Bank/Bank.Domain/Bank.Domain.csproj
 

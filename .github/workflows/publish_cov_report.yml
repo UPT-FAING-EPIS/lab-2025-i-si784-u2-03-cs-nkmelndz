@@ -34,6 +34,15 @@ jobs:
           dotnet test --collect:"XPlat Code Coverage"
           reportgenerator "-reports:./*/*/*/coverage.cobertura.xml" "-targetdir:Cobertura" -reporttypes:MarkdownSummaryGithub
 
+      - name: Generar diagrama Mermaid con dll2mmd
+        run: |
+          cd Bank
+          dotnet tool install -g dll2mmd
+          echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
+          export DOTNET_ROLL_FORWARD=Major
+          dotnet build Bank.Domain/Bank.Domain.csproj
+          dll2mmd -f Bank.Domain/bin/Debug/net8.0/Bank.Domain.dll -o disenio.md
+
       - name: (opcional) Restore dependencias
         run: dotnet restore Bank/Bank.Domain/Bank.Domain.csproj
 
