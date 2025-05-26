@@ -1,0 +1,45 @@
+name: Crear y Publicar NuGet
+
+on:
+  push:
+    branches:
+      - main # Cambia esto si tu rama principal tiene otro nombre
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v3
+
+      - name: Configurar .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.x'
+
+      - name: Restaurar dependencias
+        run: dotnet restore Bank/Bank.Domain/Bank.Domain.csproj
+
+      - name: Actualizar versión en csproj
+        run: |
+          sed -i "s|<Version>.*</Version>|<Version>20.22.07.4262</Version>|" Bank/Bank.Domain/Bank.Domain.csproj
+
+      - name: Compilar proyecto
+        run: dotnet build Bank/Bank.Domain/Bank.Domain.csproj --configuration Release --no-restore
+
+      - name: Empaquetar NuGet
+        run: dotnet pack Bank/Bank.Domain/Bank.Domain.csproj --configuration Release --no-build --output .
+
+      - name: Publicar en GitHub Packages
+        run: dotnet nuget push *.nupkg --source "github" --api-key "${{ secrets.GHTOKEN  }}" --skip-duplicate
+        env:
+          NUGET_AUTH_TOKEN: ${{ secrets.GHTOKEN  }}
+
+      - name: Crear Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v2022074262
+          name: "Release 2022074262"
+          files: |
+            *.nupkg
