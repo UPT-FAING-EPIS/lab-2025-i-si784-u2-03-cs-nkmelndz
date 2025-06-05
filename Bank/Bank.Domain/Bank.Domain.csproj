@@ -1,24 +1,18 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+    <Version>20.2207.4262</Version>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-
-    <!-- Información del paquete NuGet -->
-
-    <PackageId>Bank.nkmelndz</PackageId>
-    <Version>20.2207.4262</Version>
     <Authors>nkmelndz</Authors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <NoWarn>1591</NoWarn>
-    <Description>Paquete NuGet BankApp</Description>
-    <IsPackable>true</IsPackable>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <PackageDescription>Mi Bank Domain</PackageDescription>
+    <PackageId>BankDomainnkmelndz</PackageId>
     <RepositoryUrl>https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-03-cs-nkmelndz</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-03-cs-nkmelndz</PackageProjectUrl>
-
   </PropertyGroup>
 
 </Project>
