@@ -8,7 +8,7 @@
     <!-- Información del paquete NuGet -->
 
     <PackageId>Bank.nkmelndz</PackageId>
-    <Version>20.2207.3262</Version>
+    <Version>20.2207.4262</Version>
     <Authors>nkmelndz</Authors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>1591</NoWarn>
