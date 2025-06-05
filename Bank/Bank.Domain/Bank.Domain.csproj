@@ -7,11 +7,14 @@
 
     <!-- Información del paquete NuGet -->
 
+    <PackageId>Bank.nkmelndz</PackageId>
+    <Version>20.2207.3262</Version>
     <Authors>nkmelndz</Authors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>1591</NoWarn>
-    <PackageDescription>BankDomain</PackageDescription>
-    <PackageId>BankDomain.nkmelndz</PackageId>
+    <Description>Paquete NuGet BankApp</Description>
+    <IsPackable>true</IsPackable>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-03-cs-nkmelndz</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-03-cs-nkmelndz</PackageProjectUrl>
