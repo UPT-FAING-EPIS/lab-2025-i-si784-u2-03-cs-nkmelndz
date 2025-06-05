@@ -4,12 +4,18 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+
+    <!-- Información del paquete NuGet -->
+
+    <Authors>nkmelndz</Authors>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <NoWarn>1591</NoWarn> <!-- Opcional: para evitar advertencias por miembros públicos sin
-    documentación -->
-    <Version>0.0.0</Version>
-    <PackageId>Bank.Domain</PackageId>
-    <Authors>Cesar Nikolas Camac Melendez</Authors>
+    <NoWarn>1591</NoWarn>
+    <PackageDescription>BankDomain</PackageDescription>
+    <PackageId>BankDomain.nkmelndz</PackageId>
+    <RepositoryUrl>https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-03-cs-nkmelndz</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-03-cs-nkmelndz</PackageProjectUrl>
+
   </PropertyGroup>
 
 </Project>

@@ -1,48 +1,38 @@
-name: Build and Publish DocFX Docs
+name: Actividad02 - DocFX en GitHubPages
 
 on:
   push:
     branches:
-      - main # Cambia esto si tu rama principal tiene otro nombre
+      - main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup .NET
-        uses: actions/setup-dotnet@v3
+        uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: "8.x"
+          dotnet-version: "8.0.x"
 
       - name: Install DocFX
-        run: |
-          dotnet tool install -g docfx
-          echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
+        run: dotnet tool install -g docfx
 
-      - name: Generar diagrama Mermaid con dll2mmd
-        run: |
-          cd Bank
-          dotnet tool install -g dll2mmd
-          echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
-          export DOTNET_ROLL_FORWARD=Major
-          dotnet build Bank.Domain/Bank.Domain.csproj
-          dll2mmd -f Bank.Domain/bin/Debug/net8.0/Bank.Domain.dll -o disenio.md
+      - name: Generate API Metadata
+        run: docfx metadata
+        working-directory: Bank
 
-      - name: Restore dependencies (opcional)
-        run: dotnet restore Bank/Bank.Domain/Bank.Domain.csproj
+      - name: Build DocFX site
+        run: docfx build
+        working-directory: Bank
 
-      - name: Generate metadata
-        run: docfx metadata Bank/docfx.json
-
-      - name: Build DocFX documentation
-        run: docfx Bank/docfx.json
-
-      - name: Publish to GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: Bank/_site
+          publish_dir: ./Bank/_site
+          publish_branch: gh-pages
+          user_name: "GitHub Actions"
+          user_email: "github-actions@users.noreply.github.com"
+          keep_files: true

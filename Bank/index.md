@@ -1,9 +1,17 @@
 ---
 _layout: landing
+title: 📘 Documentación del Proyecto Math.Lib
 ---
 
-# This is the **HOMEPAGE**.
+# 📘 Documentación del Proyecto Math.Lib
 
-## [Diagrama de Clases](disenio.md)
+¡Bienvenido! Esta es la documentación técnica del proyecto **Math.Lib**, donde encontrarás detalles sobre la lógica matemática implementada, las clases principales y los resultados de pruebas automatizadas.
 
-## [Pruebas](Cobertura/SummaryGithub.md)
+## 📂 Secciones disponibles
+
+- 🔬 [Pruebas de la Biblioteca Matemática (`Math.Lib`)](Bank.Domain.html): Revisión de los módulos y métodos evaluados mediante pruebas unitarias.
+- 📊 [Informe de Cobertura de Código](coverage): Visualización del porcentaje de cobertura alcanzado por las pruebas.
+
+---
+
+> 🛠️ Esta documentación fue generada automáticamente como parte del flujo de integración continua.
