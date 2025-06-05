@@ -31,7 +31,7 @@
   },
   "index.html": {
     "href": "index.html",
-    "title": "\uD83D\uDCD8 Documentación del Proyecto Math.Lib | Bank.Domain",
-    "summary": "\uD83D\uDCD8 Documentación del Proyecto Math.Lib ¡Bienvenido! Esta es la documentación técnica del proyecto Math.Lib, donde encontrarás detalles sobre la lógica matemática implementada, las clases principales y los resultados de pruebas automatizadas. \uD83D\uDCC2 Secciones disponibles \uD83D\uDD2C Pruebas de la Biblioteca Matemática (Math.Lib): Revisión de los módulos y métodos evaluados mediante pruebas unitarias. \uD83D\uDCCA Informe de Cobertura de Código: Visualización del porcentaje de cobertura alcanzado por las pruebas. \uD83D\uDEE0️ Esta documentación fue generada automáticamente como parte del flujo de integración continua."
+    "title": "\uD83D\uDCD8 Documentación del Proyecto Bank.Domain | Bank.Domain",
+    "summary": "\uD83D\uDCD8 Documentación del Proyecto Bank.Domain ¡Bienvenido! Esta es la documentación técnica del proyecto Bank.Domain, donde encontrarás información sobre las entidades del dominio bancario, su lógica de negocio y los resultados de las pruebas automatizadas. \uD83D\uDCC2 Secciones disponibles \uD83C\uDFE6 Documentación de la Biblioteca Bancaria (Bank.Domain): Descripción detallada de las clases y métodos que conforman la lógica de dominio del sistema bancario. \uD83D\uDCCA Informe de Cobertura de Código: Visualización del porcentaje de cobertura alcanzado por las pruebas unitarias del proyecto. \uD83D\uDEE0️ Esta documentación fue generada automáticamente como parte del flujo de integración continua."
   }
 }
