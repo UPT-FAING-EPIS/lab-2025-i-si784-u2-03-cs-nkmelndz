@@ -1,16 +1,16 @@
 ---
 _layout: landing
-title: 📘 Documentación del Proyecto Math.Lib
+title: 📘 Documentación del Proyecto Bank.Domain
 ---
 
-# 📘 Documentación del Proyecto Math.Lib
+# 📘 Documentación del Proyecto Bank.Domain
 
-¡Bienvenido! Esta es la documentación técnica del proyecto **Math.Lib**, donde encontrarás detalles sobre la lógica matemática implementada, las clases principales y los resultados de pruebas automatizadas.
+¡Bienvenido! Esta es la documentación técnica del proyecto **Bank.Domain**, donde encontrarás información sobre las entidades del dominio bancario, su lógica de negocio y los resultados de las pruebas automatizadas.
 
 ## 📂 Secciones disponibles
 
-- 🔬 [Pruebas de la Biblioteca Matemática (`Math.Lib`)](Bank.Domain.html): Revisión de los módulos y métodos evaluados mediante pruebas unitarias.
-- 📊 [Informe de Cobertura de Código](coverage): Visualización del porcentaje de cobertura alcanzado por las pruebas.
+- 🏦 [Documentación de la Biblioteca Bancaria (`Bank.Domain`)](Bank.Domain.html): Descripción detallada de las clases y métodos que conforman la lógica de dominio del sistema bancario.
+- 📊 [Informe de Cobertura de Código](coverage): Visualización del porcentaje de cobertura alcanzado por las pruebas unitarias del proyecto.
 
 ---
 
