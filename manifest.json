@@ -22,7 +22,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "Bank.Domain.BankAccount",
-      "Summary": null
+      "Summary": "<p sourcefile=\"Bank.Domain.BankAccount.yml\" sourcestartlinenumber=\"1\">Representa una cuenta bancaria con operaciones básicas de débito y crédito.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -65,26 +65,6 @@
       "IsMRef": true,
       "Title": "Bank.Domain",
       "Summary": null
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "Cobertura/SummaryGithub.md",
-      "output": {
-        ".html": {
-          "relative_path": "Cobertura/SummaryGithub.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "disenio.md",
-      "output": {
-        ".html": {
-          "relative_path": "disenio.html"
-        }
-      },
-      "version": ""
     },
     {
       "type": "Conceptual",
